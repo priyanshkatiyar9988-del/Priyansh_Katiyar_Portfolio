@@ -81,6 +81,9 @@
     font-family: "Syne", serif;
 }
 
+.hero-left h1{
+    color:white;
+}
 .hero-left h1 span { 
     margin-top: 0;
     color: #8b5cf6;
