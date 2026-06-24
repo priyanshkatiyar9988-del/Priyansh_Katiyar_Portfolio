@@ -1,0 +1,140 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: rgba(10, 15, 30, 0.8);
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+    border-bottom: 1px solid #8f62f7;
+    backdrop-filter: blur(10px);
+}
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.nav-links li.active a {
+  color: #8b5cf6;
+  font-weight: 600;
+}
+
+.nav-links li.active a::after {
+  width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-box {
+    border: 2px solid #8b5cf6;
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-family: "Syne", serif;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    color:#d7c4ff;
+    gap: 30px; 
+}
+
+.nav-links li{
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 0.8rem;
+}
+
+.nav-links li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #8b5cf6;
+    transition: 0.3s;
+}
+
+.nav-links li:hover::after{
+    width: 100%;
+}
+
+.nav-links li:hover{
+    color: #8b5cf6;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.menu-overlay{
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,.45);
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    z-index: 999;
+}
+
+@media (max-width: 768px) {
+
+    .navbar{
+        padding: 15px 20px;
+    }
+
+    .hamburger{
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links{
+        position: fixed;
+    top: 0;
+    right: -100%;
+
+    width: 70%;
+    height: 100vh;
+
+    background: rgba(8, 11, 20, 0.95);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    border-left: 1px solid rgba(139,92,246,.2);
+
+    box-shadow:
+        -10px 0 30px rgba(0,0,0,.35);
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    transition: .4s ease;
+    z-index: 1000;
+    }
+
+    .nav-links.show{
+        right: 0;
+    }
+
+    .nav-links li{
+        font-size: 1.2rem;
+    }
+}

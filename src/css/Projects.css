@@ -1,0 +1,381 @@
+.section{
+    padding: 80px 80px;
+    background: #080b14;
+}
+
+.section-label{
+    color:#b08eff;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.1rem;
+    margin-bottom: 50px;
+    font-family: "Syne", sans-serif;
+}
+
+.gradient-text{
+    display: inline-block;
+    transform: translateY(13px);
+    background: linear-gradient(
+        45deg,
+        #06b6d4 0%,
+        #8b5cf6 70%,
+        #a855f7 100% 
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-clip: text;
+    font-weight: 800;
+    filter: drop-shadow(
+        0 0 10px rgba(139,92,246,.4)
+    );
+}
+/* Tabs */
+
+.project-tabs{
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.tab-btn{
+    font-size: 1rem;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 1px solid rgba(139,92,246,.25);
+    background: rgba(15,23,42,.8);
+    color: #b4c2d6;
+    font-family: "JetBrains Mono", monospace;
+    cursor: pointer;
+    transition: .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tab-btn:hover{
+    color: white;
+    border-color: #8b5cf6;
+    background: rgba(139,92,246,.12);
+}
+
+.tab-btn.active{
+    background: linear-gradient(
+        135deg,
+        #a855f7 0%,
+        #6366f1 35%,
+        #06b6d4 70%,
+        #10b981 100%
+    );
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgba(139,92,246,.35);
+}
+
+/* Tab Content */
+
+.project-tab-content{
+    display: none;
+    animation: tabFadeIn .4s ease forwards;
+}
+
+.project-tab-content.active{
+    display: block;
+}
+
+@keyframes tabFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Grid */
+
+.projects-grid{
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+}
+
+/* Card */
+
+.project-card{
+    width: 100%;
+    max-width: 650px;
+
+    background: rgba(15,23,42,.75);
+    border: 1px solid rgba(139,92,246,.18);
+    border-radius: 20px;
+    padding: 28px;
+
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    position: relative;
+    overflow: hidden;
+
+    transition: .35s ease;
+}
+
+.project-card::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        rgba(168,85,247,.08),
+        rgba(6,182,212,.05)
+    );
+    pointer-events: none;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-8px);
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,.3),
+        0 0 25px rgba(139,92,246,.15);
+}
+
+.project-card:hover::after{
+    opacity: 1;
+}
+
+/* Header */
+
+.project-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-icon{
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #06b6d4
+    );
+
+    color: white;
+    font-size: 1.2rem;
+
+    box-shadow: 0 0 15px rgba(139,92,246,.3);
+}
+
+/* Links */
+
+.project-links{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.proj-link{
+    text-decoration: none;
+    padding: 7px 14px;
+    border-radius: 30px;
+    background: rgba(17,24,39,.8);
+    border: 1px solid rgba(139,92,246,.18);
+    color: #94a3b8;
+    font-size: .65rem;
+    transition: .3s ease;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.proj-link:hover{
+    background: #8b5cf6;
+    border-color: #8b5cf6;
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 15px rgba(139,92,246,.3);
+}
+
+/* Content */
+
+.project-title{
+    font-family: "Syne", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.project-desc{
+    color: #94a3b8;
+    line-height: 1.5;
+    font-size: .95rem;
+    font-family: "Source Code Pro", monospace;
+    text-align: justify;
+}
+
+.project-tech{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech-tag{
+    padding: 6px 12px;
+    border-radius: 30px;
+    background: rgba(192,132,252,.12);
+    border: 1px solid rgba(192,132,252,.3);
+    color: #e9d5ff;
+    font-size: .75rem;
+    font-weight: 500;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.section-divider{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width:100%
+}
+
+/* Responsive */
+
+@media (max-width: 768px){
+
+    .section{
+        padding: 60px 20px;
+    }
+
+    .section-label{
+        font-size: .9rem;
+    }
+
+    .section-title{
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 35px;
+    }
+
+    .gradient-text{
+        transform: translateY(6px);
+    }
+
+    .project-tabs{
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+
+    .tab-btn{
+        width: 100%;
+        justify-content: center;
+        padding: 14px;
+        font-size: .9rem;
+    }
+
+    .projects-grid{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-card{
+        max-width: 100%;
+        padding: 22px;
+    }
+
+    .project-card-header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proj-link{
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .project-title{
+        font-size: 1.1rem;
+        line-height: 1.4;
+        text-align: left;
+    }
+
+    .project-desc{
+        font-size: .9rem;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .project-tech{
+        gap: 6px;
+    }
+
+    .tech-tag{
+        font-size: .7rem;
+        padding: 5px 10px;
+    }
+
+    .section-divider{
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .section{
+        padding: 50px 15px;
+    }
+
+    .section-title{
+        font-size: 1.8rem;
+    }
+
+    .tab-btn{
+        font-size: .85rem;
+        padding: 12px;
+    }
+
+    .project-card{
+        padding: 18px;
+    }
+
+    .project-icon{
+        width: 42px;
+        height: 42px;
+        font-size: 1rem;
+    }
+
+    .proj-link{
+        font-size: .75rem;
+        padding: 8px 10px;
+    }
+}

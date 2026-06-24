@@ -1,0 +1,457 @@
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.about{    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 50px 80px 0px 80px;
+}
+
+.about-left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-right{
+    width: 60%;
+}
+
+.about-heading{
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 5rem; 
+}
+
+.about-tag{
+    display: inline-block;
+    color: #8b5cf6;
+    font-family: "JetBrains Mono", monospace;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    color: #8b5cf6;
+    text-shadow:
+        0 0 10px rgba(139,92,246,0.6),
+        0 0 20px rgba(139,92,246,0.4),
+        0 0 40px rgba(139,92,246,0.2);
+}
+
+.about-heading h2{
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.1rem;
+    margin-bottom: 10px;
+    font-family: "Syne", sans-serif;
+}
+
+.about-heading h2 span{
+    color: #8b5cf6;
+    display: inline-block;
+    transform: translateY(13px);
+    background: linear-gradient(
+        135deg,
+        #a855f7 0%,
+        #8b5cf6 40%,
+        #06b6d4 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    background-clip: text;
+    font-weight: 800;
+    filter: drop-shadow(
+        0 0 10px rgba(139,92,246,.4)
+    );
+}
+
+.about-right p{
+    color: #94a3b8;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.about-right p strong{
+    font-weight: bolder;
+    color: #06b6d4;
+}
+
+.about-info{
+    margin-top: 2rem;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.95rem;
+    text-align: left;
+    padding: 20px 22px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(139, 92, 246, 0.25);
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: 0.3s ease;
+}
+
+.about-info p{
+    color: #cbd5e1;
+    padding: 6px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dashed rgba(255,255,255,0.08);
+}
+
+.about-info p:last-child{
+    border-bottom: none;
+}
+
+.about-info p span{
+    color: #06b6d4;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.about-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+    border: 1px solid #8b5cf6; 
+    color: #8b5cf6; 
+    padding: 13px 28px; 
+    border-radius: 8px; 
+    cursor: pointer;
+    background: transparent;
+    font-weight: 800;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.about-btn:hover{
+    background: #8a5cf637;
+    transform: translateY(-5px) translateX(5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.info-card{
+    width: 100%;
+    background: rgba(15,23,42,.8);
+    border: 1px solid rgba(139,92,246,.2);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    transition: .3s ease;
+}
+
+.info-card:hover{
+    transform: translateY(-5px);
+    border-color: #8b5cf6;
+}
+
+.card-icons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card-icons span{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: #111827;
+    color: #8b5cf6;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-item{
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.card-item:last-child{
+    border-bottom: none;
+}
+
+.card-item h4{
+    margin-bottom: 6px;
+    color: white;
+}
+
+.card-item p{
+    color: #94a3b8;
+    margin: 0;
+}
+
+.about-image-wrapper{
+    position: relative;
+    width: 230px;
+    height: 230px;
+}
+
+.about-image-wrapper::before{
+    content: "";
+    position: absolute;
+    inset: -7px;
+    border-radius: 50%;
+    border-top: 4px solid #a855f7;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid #06b6d4;
+    border-left: 4px solid transparent;
+    animation: spin 15s linear infinite;
+    box-shadow:
+        0 0 15px rgba(168,85,247,0.7),
+        0 0 25px rgba(6,182,212,0.5);
+}
+
+.about-image-circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #8b5cf6;
+}
+
+.about-image-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-do{
+    margin: 40px 80px 80px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.do-card{
+    background: rgba(15,23,42,0.75);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 18px;
+    padding: 30px 22px;
+    backdrop-filter: blur(10px);
+    transition: all .35s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.do-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.06),
+        transparent
+    );
+    transition: .8s;
+}
+
+.do-card:hover::before{
+    left: 100%;
+}
+
+.do-card:hover{
+    transform: translateY(-10px);
+    border-color: rgba(0,255,136,.4);
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.3),
+        0 0 25px rgba(0,255,136,.12);
+}
+
+.do-icon{
+    font-size: 2.3rem;
+    color: #00ff88;
+    margin-bottom: 18px;
+    text-shadow:
+        0 0 10px rgba(0,255,136,.8),
+        0 0 20px rgba(0,255,136,.5);
+
+    transition: all .3s ease;
+}
+
+.do-card:hover .do-icon{
+    transform: scale(1.15);
+}
+
+.do-card h3{
+    color: white;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    font-family: "Syne", sans-serif;
+}
+
+.do-card p{
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.section-divider {
+    position: relative;
+    width: 90%;
+    height: 1.5px;
+    margin: 20px auto;
+    background: rgba(255,255,255,0.1);
+}
+
+.section-divider::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 50%;
+    height: 3px;
+
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(
+        90deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    border-radius: 999px;
+
+    box-shadow:
+        0 0 15px rgba(139,92,246,0.6);
+}
+
+/* Mobile View */
+@media (max-width: 768px){
+
+    .about{
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+
+    .about-heading{
+        text-align: center;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+
+    .about-heading h2{
+        font-size: 2.2rem;
+    }
+
+    .about-heading h2 span{
+        transform: none;
+    }
+
+    .about-left,
+    .about-right{
+        width: 100%;
+    }
+
+    /* Photo Hide */
+    .about-image-wrapper{
+        display: none;
+    }
+
+    .about-info{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .about-info p{
+        font-size: 0.9rem;
+    }
+
+    .about-right{
+        text-align: center;
+    }
+
+    .about-right p{
+        text-align: center;
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .about-btn{
+        width: 220px;
+    }
+
+    .about-do{
+        margin: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 15px;
+        background: transparent;
+    }
+
+    .do-card{
+        padding: 20px;
+        border-radius: 15px;
+        background: rgba(15,23,42,.8);
+        border: 1px solid rgba(139,92,246,.25);
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px){
+
+    .about-heading h2{
+        font-size: 1.8rem;
+    }
+
+    .about-tag{
+        font-size: 16px;
+    }
+
+    .about-right p{
+        font-size: 0.85rem;
+    }
+
+    .about-btn{
+        width: 100%;
+    }
+
+    .about-do{
+        grid-template-columns: repeat(2,1fr);
+        padding: 1px;
+    }
+    .do-icon{
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+
+    .do-card h3{
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .do-card p{
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+}
