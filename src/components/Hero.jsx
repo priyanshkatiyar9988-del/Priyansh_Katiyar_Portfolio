@@ -1,5 +1,5 @@
 import "../css/Hero.css";
-import profile from "../assets/Pi7_Passport_Photo.jpeg"
+import profile from "../assets/Profile_pic.jpeg"
 import { FaLinkedin, FaGithub} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import CountUp from "react-countup";
@@ -55,7 +55,7 @@ function Hero() {
             </div>
                 <div className="stats">
                     <div className="stat-card">
-                        <h3>2+</h3>
+                        <h3>4+</h3>
                         <p>Projects</p>
                     </div>
 
@@ -70,7 +70,7 @@ function Hero() {
                     </div>
 
                     <div className="stat-card">
-                        <h3>2</h3>
+                        <h3>5</h3>
                         <p>Certificates</p>
                     </div>
                 </div>

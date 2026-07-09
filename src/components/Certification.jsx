@@ -30,6 +30,24 @@ function Certificates() {
       provider: "EduSkills Virtual Internship",
       link: "/certificates/Cybersecurity.pdf",
     },
+    {
+      icon:<FaReact />,
+      title: "Frontend Developer (React)",
+      provider: "Hackerrank",
+      link: "/certificates/frontend_developer_react.pdf",
+    },
+    {
+      icon:<FaServer />,
+      title: "SQL (Basic)",
+      provider: "Hackerrank",
+      link: "/certificates/sql_basic_certificate.pdf",
+    },
+    {
+      icon:<FaTools />,
+      title: "Technology Job Simulation",
+      provider: "Deloitte via Forage",
+      link: "/certificates/deloitte.pdf",
+    },
   ];
 
   return (

@@ -106,8 +106,8 @@
 /* Grid */
 
 .projects-grid{
-    display: flex;
-    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -115,8 +115,6 @@
 
 .project-card{
     width: 100%;
-    max-width: 650px;
-
     background: rgba(15,23,42,.75);
     border: 1px solid rgba(139,92,246,.18);
     border-radius: 20px;

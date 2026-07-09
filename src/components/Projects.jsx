@@ -222,7 +222,110 @@ function Projects() {
               </div>
 
             </div>
+            {/* Project 2 */}
+            <div className="project-card glass reveal">
+
+              <div className="project-card-header">
+                <div className="project-icon">🏥</div>
+
+                <div className="project-links">
+                  <a
+                    href="https://github.com/priyanshkatiyar9988-del/Hospital-Management-System"
+                    className="proj-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                    View GitHub
+                  </a>
+                </div>
+              </div>
+
+              <h3 className="project-title">
+                Hospital Management System
+              </h3>
+
+              <p className="project-desc">
+                Developed a web-based Hospital Management System to streamline patient records,
+                doctor management, appointment scheduling, and hospital administration through
+                a centralized platform.
+              </p>
+
+              <p className="project-desc">
+                Implemented secure user authentication, role-based access, appointment booking,
+                and patient record management to improve operational efficiency and reduce
+                manual paperwork.
+              </p>
+
+              <p className="project-desc">
+                Designed a responsive and user-friendly interface with an organized dashboard,
+                enabling efficient management of hospital workflows and healthcare services.
+              </p>
+
+              <div className="project-tech">
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">Django</span>
+                <span className="tech-tag">HTML</span>
+                <span className="tech-tag">CSS</span>
+                <span className="tech-tag">Bootstrap</span>
+                <span className="tech-tag">JavaScript</span>
+                <span className="tech-tag">PostgreSQL</span>
+              </div>
+            </div>
+            <div className="project-card glass reveal">
+
+              <div className="project-card-header">
+                <div className="project-icon">📈</div>
+
+                <div className="project-links">
+                  <a
+                    href="https://github.com/priyanshkatiyar9988-del/mass_hiring_signal_detector"
+                    className="proj-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub />
+                    View GitHub
+                  </a>
+                </div>
+              </div>
+
+              <h3 className="project-title">
+                Mass Hiring Signal Detector
+              </h3>
+
+              <p className="project-desc">
+                Developed an AI-powered hiring signal detection system that analyzes company
+                news and announcements to identify recruitment trends and large-scale hiring
+                activities.
+              </p>
+
+              <p className="project-desc">
+                Integrated automated news collection, keyword extraction, and scoring
+                algorithms to classify hiring signals, helping users monitor potential job
+                opportunities across multiple organizations.
+              </p>
+
+              <p className="project-desc">
+                Built an intuitive dashboard to visualize hiring insights, company-wise
+                results, and confidence scores, enabling faster analysis and informed
+                decision-making.
+              </p>
+
+              <div className="project-tech">
+                <span className="tech-tag">Python</span>
+                <span className="tech-tag">Django</span>
+                <span className="tech-tag">HTML</span>
+                <span className="tech-tag">CSS</span>
+                <span className="tech-tag">Bootstrap</span>
+                <span className="tech-tag">JavaScript</span>
+                <span className="tech-tag">RSS Feed</span>
+                <span className="tech-tag">JSON</span>
+              </div>
+
+            </div>
           </div>
+
         </div>
       </div>
 

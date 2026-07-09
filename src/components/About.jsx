@@ -1,5 +1,5 @@
 import "../css/About.css";
-import profile from "../assets/Pi7_Passport_Photo.jpeg"
+import profile from "../assets/Profile_pic.jpeg"
 import { FaLaptopCode, FaServer, FaDatabase } from "react-icons/fa";
 import { BsLightbulb } from "react-icons/bs";
 import { useEffect, useState } from "react";
