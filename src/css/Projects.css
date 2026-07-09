@@ -303,6 +303,7 @@
     .projects-grid{
         display: flex;
         justify-content: center;
+        grid-template-columns: 1fr;
     }
 
     .project-card{
