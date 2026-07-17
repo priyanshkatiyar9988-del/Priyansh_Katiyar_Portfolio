@@ -38,7 +38,7 @@ function Hero() {
             </div>
             <div className="hero-buttons">
                 <a
-                    href="https://drive.google.com/file/d/1uotJVQP_i4vdyIz-FjWLQvga1VZokm2F/view?usp=drivesdk"
+                    href="https://drive.google.com/file/d/1jp9JHxtDirUlr8R81QKrD-e4bx0_UoeW/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="resume-btn"
