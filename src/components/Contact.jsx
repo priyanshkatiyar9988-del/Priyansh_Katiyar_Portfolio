@@ -14,8 +14,8 @@ function Contact() {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "priyanshkatiyar9988@example.com",
-      link: "mailto:priyanshkatiyar9988@example.com"
+      value: "priyanshkatiyar9988@gmail.com",
+      link: "mailto:priyanshkatiyar9988@gmail.com"
     },
     {
       icon: <FaPhoneAlt />,
