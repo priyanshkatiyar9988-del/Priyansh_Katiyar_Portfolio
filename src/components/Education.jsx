@@ -42,7 +42,7 @@ function Education() {
             </span>
 
             <h3>
-              GL Bajaj Institute of Technology
+              GL Bajaj Institute of Technology and Management
             </h3>
 
             <p>
