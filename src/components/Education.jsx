@@ -6,6 +6,7 @@ import {
   FaUserGraduate,
   FaCalendarAlt,
   FaAward,
+  FaLaptop,
   FaStar
 } from "react-icons/fa";
 
@@ -30,7 +31,7 @@ function Education() {
         <div className="timeline-item">
 
           <div className="timeline-icon">
-            <FaUserGraduate />
+            <FaLaptop />
           </div>
 
           <div className="timeline-card current-card reveal">
@@ -74,7 +75,7 @@ function Education() {
 
             <span className="edu-badge">
                 <span className="badge-dot"></span>
-              Bachelor's Completed
+              UnderGraduate
             </span>
 
             <h3>
