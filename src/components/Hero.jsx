@@ -1,7 +1,8 @@
 import "../css/Hero.css";
 import profile from "../assets/Profile_pic.jpeg"
-import { FaLinkedin, FaGithub} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaHackerrank} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import {SiLeetcode, SiHackerrank} from "react-icons/si";
 import CountUp from "react-countup";
 
 function Hero() {
@@ -34,6 +35,20 @@ function Hero() {
 
                 <a href="mailto:priyanshkatiyar9988@gmail.com" className="hero-social-link email">
                     <MdEmail />
+                </a>
+
+                <a href="https://www.linkedin.com/in/priyansh-katiyar/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-social-link linkedin">
+                    <SiLeetcode />
+                </a>
+
+                <a href="https://www.linkedin.com/in/priyansh-katiyar/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hero-social-link linkedin">
+                    <FaHackerrank />
                 </a>
             </div>
             <div className="hero-buttons">
