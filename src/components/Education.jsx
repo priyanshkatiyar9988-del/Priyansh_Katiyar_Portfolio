@@ -71,7 +71,7 @@ function Education() {
             <FaUserGraduate />
           </div>
 
-          <div className="timeline-card current-card reveal">
+          <div className="timeline-card reveal">
 
             <span className="edu-badge">
                 <span className="badge-dot"></span>
