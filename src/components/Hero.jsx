@@ -37,17 +37,17 @@ function Hero() {
                     <MdEmail />
                 </a>
 
-                <a href="https://www.linkedin.com/in/priyansh-katiyar/" 
+                <a href="https://leetcode.com/u/PriyanshKatiyar/" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-social-link linkedin">
+                className="hero-social-link leetcode">
                     <SiLeetcode />
                 </a>
 
-                <a href="https://www.linkedin.com/in/priyansh-katiyar/" 
+                <a href="https://www.hackerrank.com/profile/priyanshkatiyar1" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hero-social-link linkedin">
+                className="hero-social-link hackerrank">
                     <FaHackerrank />
                 </a>
             </div>
