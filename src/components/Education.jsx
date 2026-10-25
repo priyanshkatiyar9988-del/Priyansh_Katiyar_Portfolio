@@ -26,8 +26,7 @@ function Education() {
         </div>
 
       <div className="timeline">
-
-        {/* BCA */}
+        {/* MCA */}
         <div className="timeline-item">
 
           <div className="timeline-icon">
@@ -38,7 +37,44 @@ function Education() {
 
             <span className="edu-badge current-badge">
                 <span className="badge-dot"></span>
-              Recently Completed
+              Currently Pursuing
+            </span>
+
+            <h3>
+              GL Bajaj Institute of Technology
+            </h3>
+
+            <p>
+              Master of Computer Applications (MCA)
+            </p>
+
+            <div className="edu-meta">
+              <span>
+                <FaAward />
+                
+              </span>
+
+              <span>
+                <FaCalendarAlt />
+                2026- 2028
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        {/* BCA */}
+        <div className="timeline-item">
+
+          <div className="timeline-icon">
+            <FaUserGraduate />
+          </div>
+
+          <div className="timeline-card current-card reveal">
+
+            <span className="edu-badge">
+                <span className="badge-dot"></span>
+              Bachelor's Completed
             </span>
 
             <h3>
